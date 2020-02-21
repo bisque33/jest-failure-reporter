@@ -1,0 +1,23 @@
+{
+  "name": "jest-failure-reporter",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bisque33/jest-failure-reporter.git"
+  },
+  "keywords": [
+    "jest",
+    "reporter"
+  ],
+  "author": "bisque33",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/bisque33/jest-failure-reporter/issues"
+  },
+  "homepage": "https://github.com/bisque33/jest-failure-reporter#readme"
+}
