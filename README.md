@@ -2,7 +2,7 @@
 
 Custom [reporter](https://jestjs.io/docs/en/configuration#reporters-arraymodulename--modulename-options) for [jest](https://jestjs.io/)
 
-Show failed tests and print retry commands, like Rspec.
+Show failed tests and retry commands, like Rspec.
 
 ## Installation
 
@@ -17,7 +17,6 @@ Add to jest config or package.json. I recommend using it with the default report
 ```json
 // package.json
 {
-  // ...
   "jest": {
     "reporter": ["default", "jest-failure-reporter"]
   }
@@ -26,20 +25,18 @@ Add to jest config or package.json. I recommend using it with the default report
 
 ## Options
 
-- `retryCommand`: If specified, you can change the command prefix.
-  The default is 'yarn test -t'.
+- `retryCommand`: If specified, you can change the command prefix. The default is `yarn test`.
 
 ```json
 // package.json
 {
-  // ...
   "jest": {
     "reporter": [
       "default",
       [
         "jest-failure-reporter",
         {
-          "retryCommand": "jest -t" // add option
+          "retryCommand": "jest"
         }
       ]
     ]
@@ -100,14 +97,14 @@ Snapshots:   0 total
 Time:        1.135s
 Ran all test suites matching /test.js/i.
 ./test.js
-npx jest -t "failure two plus two is five"
-npx jest -t "failure two plus two is six"
+npx jest ./test.js -t "failure two plus two is five"
+npx jest ./test.js -t "failure two plus two is six"
 ```
 
-Additional output by jest-failure-reporter are the last three lines.
+Additional output by jest-failure-reporter is the last three lines.
 
-```
+```text
 ./test.js
-npx jest -t "failure two plus two is five"
-npx jest -t "failure two plus two is six"
+npx jest ./test.js -t "failure two plus two is five"
+npx jest ./test.js -t "failure two plus two is six"
 ```
