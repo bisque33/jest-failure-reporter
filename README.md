@@ -1,5 +1,7 @@
 # jest-failure-reporter
 
+[![npm version](https://badge.fury.io/js/jest-failure-reporter.svg)](https://badge.fury.io/js/jest-failure-reporter)
+
 Custom [reporter](https://jestjs.io/docs/en/configuration#reporters-arraymodulename--modulename-options) for [jest](https://jestjs.io/)
 
 Show failed tests and retry commands, like Rspec.
