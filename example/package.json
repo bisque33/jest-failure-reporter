@@ -9,7 +9,7 @@
       [
         "../index.js",
         {
-          "retryCommand": "npx jest -t"
+          "retryCommand": "npx jest"
         }
       ]
     ]
